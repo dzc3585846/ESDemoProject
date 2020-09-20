@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ESDemoProject
+server:
+  port: 6016
+es:
+  url: 127.0.0.1:9200  #多个结点中间用逗号分隔
+
+
