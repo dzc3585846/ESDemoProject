@@ -61,6 +61,7 @@ public class ElasticsearchConfig {
             return httpClientBuilder.setDefaultCredentialsProvider(credentialsProvider);
 
         });
+        //设置超时时间
         builder.setRequestConfigCallback(requestConfigCallback -> {
             return requestConfigCallback.setConnectTimeout(50*1000).setConnectionRequestTimeout(50*1000);
         });
